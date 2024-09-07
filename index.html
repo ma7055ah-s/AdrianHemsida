@@ -1,105 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>W3.CSS Template</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-  <style>
-    /* Container for cards */
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns */
-      gap: 20px; /* Space between cards */
-      padding: 20px; /* Padding around the container */
-    }
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+   /* Container for cards */
+   .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 4 cards per row */
+            gap: 20px; /* Space between cards */
+            padding: 20px; /* Padding around the container */
+        }
 
-    /* Style for each card */
-    .card {
-      background-color: #fff; /* Card background color */
-      border: 1px solid #ddd; /* Card border */
-      border-radius: 8px; /* Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-      overflow: hidden; /* Hide overflow */
-      transition: transform 0.2s; /* Smooth hover effect */
-    }
+        /* Style for each card */
+        .card {
+            background-color: #fff; /* Card background color */
+            border: 1px solid #ddd; /* Card border */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            overflow: hidden; /* Hide overflow */
+            transition: transform 0.2s; /* Smooth hover effect */
+        }
 
-    /* Hover effect for cards */
-    .card:hover {
-      transform: translateY(-10px); /* Lift card on hover */
-    }
+        /* Hover effect for cards */
+        .card:hover {
+            transform: translateY(-10px); /* Lift card on hover */
+        }
 
-    /* Image styling inside the card */
-    .card img {
-      width: 100%; /* Full width of card */
-      height: auto; /* Maintain aspect ratio */
-      display: block; /* Removes bottom space */
-    }
+        /* Image styling inside the card */
+        .card img {
+            width: 100%; /* Full width of card */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Removes bottom space */
+        }
 
-    /* Text content inside the card */
-    .card-content {
-      padding: 15px; /* Padding for card content */
-      text-align: center; /* Center text alignment */
-    }
+        /* Text content inside the card */
+        .card-content {
+            padding: 15px; /* Padding for card content */
+            text-align: center; /* Center text alignment */
+        }
 
-    .card-title {
-      font-size: 18px; /* Title font size */
-      font-weight: bold; /* Bold title */
-      margin: 10px 0; /* Margin for title */
-    }
+        .card-title {
+            font-size: 18px; /* Title font size */
+            font-weight: bold; /* Bold title */
+            margin: 10px 0; /* Margin for title */
+        }
 
-    .card-text {
-      font-size: 14px; /* Text font size */
-      color: #666; /* Text color */
-    }
+        .card-text {
+            font-size: 14px; /* Text font size */
+            color: #666; /* Text color */
+        }
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
-    body, html {
-      height: 100%;
-      font-family: "Inconsolata", sans-serif;
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-    }
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Eleztriq.jpg");
+  min-height: 75%;
+}
 
-    .bgimg {
-      background-position: center;
-      background-size: cover;
-      background-image: url("Eleztriq.jpg");
-      min-height: 75%;
-    }
-
-    .menu {
-      display: none;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .w3-top .w3-row {
-        display: flex;
-        flex-direction: column; /* Stack links vertically */
-      }
-
-      .w3-button {
-        text-align: center;
-        padding: 15px 0; /* Increase padding for touch targets */
-      }
-    }
-
-    @media (max-width: 600px) {
-      .card-title {
-        font-size: 16px; /* Adjust title size */
-      }
-
-      .card-text {
-        font-size: 12px; /* Adjust text size */
-      }
-
-      .w3-padding-48 {
-        padding-top: 24px; /* Reduce padding */
-        padding-bottom: 24px; /* Reduce padding */
-      }
-    }
-  </style>
+.menu {
+  display: none;
+}
+</style>
 </head>
 <body>
 
@@ -132,11 +101,14 @@
   </div>
 </header>
 
+<!-- Add a background color and large text to the whole page 
+<div class="w3-sand w3-grayscale w3-large">-->
+
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Om OSS</span></h5>
-    <p>Eleqtriq AB utför elinstalioner och massa annat elekttroniskt vilket är gött om man inte kan saker om elektroNIk. OCh då kan ju det vara falrigt och då behöver man extperter som oss</p>
+    <p>Eleqtriq AB utför elinstalioner ovh massa annat elekttroniskt vilket är gött om man inte kan saker om elektroNIk. OCh då kan ju det vara falrigt och då behöver man extperter som oss</p>
     <p>UTöver detta är vi två heta grabbar som gör jobbet som du kan tråna över när vi står svettiga i ditt vardagsrum</p>
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i>"Wow, vilken fin lampa vi fick!" </i></p>
@@ -154,6 +126,8 @@
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Våra tjänster</span></h5>
 
+
+
     <!-- Card Container -->
     <div class="card-container">
       <!-- Card 1 -->
@@ -164,10 +138,51 @@
               <p class="card-text">Uttag och sånt.</p>
           </div>
       </div>
-      <!-- Add more cards as needed... -->
+
+      <!-- Card 2 -->
+      <div class="card">
+          <img src="bild3.jpg" alt="Card Image 2">
+          <div class="card-content">
+              <h3 class="card-title">Card Title 2</h3>
+              <p class="card-text">Belysning.</p>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+          <img src="bild3.jpg" alt="Card Image 3">
+          <div class="card-content">
+              <h3 class="card-title">Card Title 3</h3>
+              <p class="card-text">värmpunpar - fan vet jag.</p>
+          </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+          <img src="bild3.jpg" alt="Card Image 4">
+          <div class="card-content">
+              <h3 class="card-title">Card Title 4</h3>
+              <p class="card-text">dra sladdar i guess.</p>
+          </div>
+      </div>
+
+      <!-- More cards can be added in the same format -->
+      <div class="card">
+        <img src="bild3.jpg" alt="Card Image 5">
+        <div class="card-content">
+            <h3 class="card-title">Card Title 4</h3>
+            <p class="card-text">larm.</p>
+        </div>
     </div>
+    <div class="card">
+      <img src="bild3.jpg" alt="Card Image 6">
+      <div class="card-content">
+          <h3 class="card-title">Card Title 4</h3>
+          <p class="card-text">solceller.</p>
+      </div>
   </div>
-</div>
+  </div>
+
 
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
@@ -177,18 +192,25 @@
     <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
     <p><span class="w3-tag">Kontakt!</span> Fyll i dina uppgifter och vad vi ska hjälpa dig med så ringer vi upp dig eller om vi ,ejlar dig eller om du ska få ett kostnadsförslag men det är s¨åklart svår om vi inte vet allt</p>
     <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00" style="width: 100%;"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Fökklrara gärna lite mer vad ska göra" required name="Message" style="width: 100%;"></p>
-      <p><button class="w3-button w3-black" type="submit" style="width: 100%; padding: 16px;">Skicka</button></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Namn" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Tjänst" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="något annat jag tänkte på" required name="exempel"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Fökklrara gärna lite mer vad ska göra" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">Skicka</button></p>
     </form>
   </div>
+</div>
+
+<!-- End page content -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
   <a href="https://www.instagram.com/electriqsyd/" target="_blank">
     <img src="insta.png" class="w3-image" style="width:2%; float:right;">
-  </a>
+</a>
+
 </footer>
 
 <script>
